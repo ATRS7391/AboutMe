@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/PersonalPortfolio/profilelogo.png" type="image/icon type">
+    <title>ATRS | The Idiot from Titan</title>
+</head>
+<body oncontextmenu="return false">
+    <div class="mainWebsite">
+        <div class="openingPage" id="home">
+            <div class="navigationBar">
+                <button class="menu" id="navBar" onclick="navBar(); this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                    <svg width="50" height="50" viewBox="0 0 100 100">
+                      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                      <path class="line line2" d="M 20,50 H 80" />
+                      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                  </button>
+            </div>
+            <div class="profilePic" id="profileAndNav">
+                <img src="/PersonalPortfolio/profilelogo.png">
+            </div>
+            <div class="typing">
+                <div class="typingIdiot">The Idiot from Titan.</div>
+            </div>
+        </div>
+        <div class="aboutMe" id="aboutMe">
+            <div class="aboutMeStart">aboutMe() <span style="color: orange">{</span></div>
+            <div class="aboutMeContent"><span style="font-size: 2em;">Hey there, myself <span style="color: orange;">ATRS</span>. nice to meet u <span style="color: rgb(255, 0, 140);">:)</span></span> <br>Umm... Lemme introduce myself. I am ATRS who loves music a lot, an aviation ethusiast and intermidiate coder. Just dunno what to write in intro :sweat_smile:<br><br>Music Lover? ofc<br>Aviation Enthusiast? any doubts? ;) <br>Coder? yea, intermidiate<br>Photographer? oh yea, I &lt;3 it<br><br>Extras? :thinking: songwriter, cuber, ◢◤ fan, noob music producer, web surfer, sometimes breaks into accounts ;) of friends only, proudly careless and irresponsible :rofl: aaaaand... idk :( ah wait, one more...  an idiot too with some awesome idiotic friends, enjoying life all together :D<br><br><span style="font-size: 2em;">And yes, I am from Titan xD</span></span></div>
+            <div class="aboutMeEnd"><span style="color: orange;">}</span></div>
+        </div>
+        <div class="projects" id="projects">
+            <div class="projectsStart">projects() <span style="color: orange">{</span></div>
+            <div class="projectsContent"><span style="font-size: 2em;">Projects? <span style="color: orange;">:thinking:</span> (x100 times) :tensed: :worried: :confused: <br>uh.. umm... uhm... ig I've never worked on any big projects :|</span> <br><br>Hehe, :pleading_face: actually I've never worked on any projects to show other than my personal projects :grin: out of which you'll find some on my <a href="https://github.com/ATRS7391" target="_blank">GitHub</a> :)<br><br> Some are on <a href="https://github.com/ATRS7391" target="_blank">GitHub</a>, then what about the others? simple! either lost, or in any disk, or deleted cause I wasn't satisfied with them or somewhere in use I forgot -_- like Discord bots. <br><br><span style="font-size: 2em;">BTW, what projects do you expect from an idiot?</span> <br>(actually, I have never got any cool ideas to do. ik bad excuse! )<br></span></span></div>
+            <div class="projectsEnd"><span style="color: orange;">}</span></div>
+        </div>
+        <div class="connect" id="getConnected">
+            <div class="connectStart">getConnected() <span style="color: orange">{</span></div>
+            <div class="connectContent">
+                <a class="connectLinks" href="https://github.com/ATRS7391" target="_blank">GitHub</a><br>
+                <a class="connectLinks" href="https://stackoverflow.com/users/15661845/atrs" target="_blank">Stack Overflow</a><br>
+                <a class="connectLinks" href="https://www.reddit.com/user/badasslover7391" target="_blank">Reddit</a><br>
+                <a class="connectLinks" href="https://www.pinterest.com/ATRS7391/" target="_blank">Pinterest</a><br>
+                <a class="connectLinks" href="https://twitter.com/ATRS7391" target="_blank">Twitter</a><br>
+                <a class="connectLinks" href="https://open.spotify.com/user/ufwyw76g85kitw2j5vsprxkjq" target="_blank">Spotify</a><br>
+                <a class="connectLinks" href="mailto:atrs7391@gmail.com" target="_blank">Email</a><br>
+                <a class="connectLinks" href="https://atrs7391.github.io/AboutMe/Old" target="_blank">My Older Website</a><br>
+            </div>
+            <div class="connectEnd"><span style="color: orange;">}</span></div>
+        </div>
+        <div class="thanku">
+            <div class="comment" style="font-size: 1rem;"><span style="color: orange">//</span> Woah, you checked this till last instead of the fact that this is kinda messy like me -_-, TYSM :) hover or tap below!</div>
+            <div class="secretNote"><br>Hey you, yes you, only you... <br>
+                You're amazing and your personality is interesting and great... <br>
+                Always be yourself... You're great! <br>
+                And never ever give up...<br>
+                Have an awesome day ahead :)<br><br></div>
+        </div>
+    </div>
+</body>
+<script>
+    function navBar() {
+        if (document.getElementById('profileAndNav').innerHTML.startsWith('<div') == true) {
+            document.getElementById('profileAndNav').innerHTML = '<img src="/PersonalPortfolio/profilelogo.png">';
+        }
+        else if (document.getElementById('profileAndNav').innerHTML.startsWith('<img') == false) {
+            document.getElementById('profileAndNav').innerHTML = `<div class="navigationLinks">
+                <a class="connectLinks" href="#home">home()</a><br>
+                <a class="connectLinks" href="#aboutMe">aboutMe()</a><br>
+                <a class="connectLinks" href="#projects">projects()</a><br>
+                <a class="connectLinks" href="#getConnected">getConnected()</a><br>
+            </div>`;
+        }
+        else {
+            document.getElementById('profileAndNav').innerHTML = `<div class="navigationLinks">
+                <a class="connectLinks" href="#home">home()</a><br>
+                <a class="connectLinks" href="#aboutMe">aboutMe()</a><br>
+                <a class="connectLinks" href="#projects">projects()</a><br>
+                <a class="connectLinks" href="#getConnected">getConnected()</a><br>
+            </div>`;
+        }
+    }
+    </script>
+</html>

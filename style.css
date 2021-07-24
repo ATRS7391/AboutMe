@@ -1,0 +1,237 @@
+body, html{
+    color: white;
+    font-family: monospace;
+    background-color: black;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+  
+  /* visited link */
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+  
+  /* mouse over link */
+a:hover {
+    text-decoration: none;
+    color: rgb(255, 0, 140);
+}
+  
+  /* selected link */
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.openingPage, .aboutMe, .projects, .connect {
+    display: flex;
+    width: 100%;
+}
+
+
+/* Opening Page CSS */
+
+.openingPage {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+    align-self: center;
+    display: flex;
+}
+
+.line {
+fill: none;
+stroke: white;
+stroke-width: 6;
+transition: stroke-dasharray 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+stroke-dasharray: 60 207;
+stroke-width: 6;
+
+}
+.line2 {
+stroke-dasharray: 60 60;
+stroke-width: 6;
+}
+.line3 {
+stroke-dasharray: 60 207;
+stroke-width: 6;
+}
+.opened .line1 {
+    stroke: orange;
+stroke-dasharray: 90 207;
+stroke-dashoffset: -134;
+stroke-width: 6;
+}
+.opened .line2 {
+stroke-dasharray: 1 60;
+stroke-dashoffset: -30;
+stroke-width: 6;
+}
+.opened .line3 {
+    stroke: rgb(255, 0, 140);
+stroke-dasharray: 90 207;
+stroke-dashoffset: -134;
+stroke-width: 6;
+}
+
+
+.typingIdiot {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+    
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.typing {
+    display: inline-block;
+    position: relative;
+    order: 3;
+}
+  
+.typing:after {
+    content: '';
+    position: absolute;
+    width: 94%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.typing:hover:after {
+content: '';
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+
+/* About Me CSS */
+
+.aboutMe, .projects, .connect {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    align-self: center;
+    top: 0;
+    left: 0;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.aboutMeStart, .aboutMeEnd, .projectsStart, .projectsEnd, .connectStart, .connectEnd {
+    font-size: 3em;
+    color: rgb(255, 0, 140);
+}
+
+.aboutMeContent, .projectsContent, .connectContent {
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align-last: center;
+}
+
+.connectContent {
+    text-align: left;
+    font-size: 2em;
+}
+
+.connectLinks {
+    display: inline-block;
+    position: relative;
+    order: 3;
+}
+  
+.connectLinks:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0px;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.connectLinks:hover:after {
+    content: '';
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.secretNote {
+    font-size: 1em; 
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace; 
+    color: black;
+}
+
+.secretNote:hover {
+    color: rgb(255, 0, 140);
+    transition: 0.30s;
+}
+
+
+.navigationLinks {
+    text-align-last: center;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 27%;
+    padding-top: 28%;
+    transition: 0.30s;
+}
