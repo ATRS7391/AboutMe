@@ -9,7 +9,6 @@
     <title>ATRS | The Idiot from Titan</title>
 </head>
     <script>
-    document.getElementById('profileAndNav').innerHTML = '<img src="profilelogo.png">';
     function navBar() {
         if (document.getElementById('profileAndNav').innerHTML.startsWith('<div') == true) {
             document.getElementById('profileAndNav').innerHTML = '<img src="profilelogo.png">';
@@ -45,6 +44,7 @@
                   </button>
             </div>
             <div class="profilePic" id="profileAndNav">
+                <img src="profilelogo.png">
             </div>
             <div class="typing">
                 <div class="typingIdiot">The Idiot from Titan.</div>
