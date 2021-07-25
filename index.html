@@ -8,6 +8,30 @@
     <link rel="icon" href="profilelogo.png" type="image/icon type">
     <title>ATRS | The Idiot from Titan</title>
 </head>
+    <script>
+    document.getElementById('profileAndNav').innerHTML = '<img src="profilelogo.png">';
+    function navBar() {
+        if (document.getElementById('profileAndNav').innerHTML.startsWith('<div') == true) {
+            document.getElementById('profileAndNav').innerHTML = '<img src="profilelogo.png">';
+        }
+        else if (document.getElementById('profileAndNav').innerHTML.startsWith('<img') == false) {
+            document.getElementById('profileAndNav').innerHTML = `<div class="navigationLinks">
+                <a class="connectLinks" href="#home">home()</a><br>
+                <a class="connectLinks" href="#aboutMe">aboutMe()</a><br>
+                <a class="connectLinks" href="#projects">projects()</a><br>
+                <a class="connectLinks" href="#getConnected">getConnected()</a><br>
+            </div>`;
+        }
+        else {
+            document.getElementById('profileAndNav').innerHTML = `<div class="navigationLinks">
+                <a class="connectLinks" href="#home">home()</a><br>
+                <a class="connectLinks" href="#aboutMe">aboutMe()</a><br>
+                <a class="connectLinks" href="#projects">projects()</a><br>
+                <a class="connectLinks" href="#getConnected">getConnected()</a><br>
+            </div>`;
+        }
+    }
+    </script>
 <body oncontextmenu="return false">
     <div class="mainWebsite">
         <div class="openingPage" id="home">
@@ -21,7 +45,6 @@
                   </button>
             </div>
             <div class="profilePic" id="profileAndNav">
-                <img src="profilelogo.png">
             </div>
             <div class="typing">
                 <div class="typingIdiot">The Idiot from Titan.</div>
@@ -61,27 +84,4 @@
         </div>
     </div>
 </body>
-<script>
-    function navBar() {
-        if (document.getElementById('profileAndNav').innerHTML.startsWith('<div') == true) {
-            document.getElementById('profileAndNav').innerHTML = '<img src="profilelogo.png">';
-        }
-        else if (document.getElementById('profileAndNav').innerHTML.startsWith('<img') == false) {
-            document.getElementById('profileAndNav').innerHTML = `<div class="navigationLinks">
-                <a class="connectLinks" href="#home">home()</a><br>
-                <a class="connectLinks" href="#aboutMe">aboutMe()</a><br>
-                <a class="connectLinks" href="#projects">projects()</a><br>
-                <a class="connectLinks" href="#getConnected">getConnected()</a><br>
-            </div>`;
-        }
-        else {
-            document.getElementById('profileAndNav').innerHTML = `<div class="navigationLinks">
-                <a class="connectLinks" href="#home">home()</a><br>
-                <a class="connectLinks" href="#aboutMe">aboutMe()</a><br>
-                <a class="connectLinks" href="#projects">projects()</a><br>
-                <a class="connectLinks" href="#getConnected">getConnected()</a><br>
-            </div>`;
-        }
-    }
-    </script>
 </html>
