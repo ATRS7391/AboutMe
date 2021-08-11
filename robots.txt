@@ -2,4 +2,6 @@
 User-agent: *
 Disallow: /* .css$
 Disallow: /* .png$
+Disallow: /* .xml$
+Disallow: /* .txt$
 Sitemap: https://atrs7391.github.io/sitemap.xml
