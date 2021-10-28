@@ -10,6 +10,11 @@
       <link rel="stylesheet" href="./newstyles.css">
       <link rel="icon" href="./profilelogo.png" type="image/icon type">
       <title>ATRS | The Idiot from Titan</title>
+      <script>
+         	function changer() {
+		document.getElementById("menu-btn").checked = false;
+	}
+      </script>
    </head>
    <body>
       <header class="header">
@@ -17,10 +22,10 @@
          <input class="menu-btn" type="checkbox" id="menu-btn" />
          <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
          <ul class="menu">
-            <li><a href="#about" rel="noreferrer" aria-label="Jump to About">About</a></li>
-            <li><a href="#projects" rel="noreferrer" aria-label="Jump to Projects">Projects</a></li>
-            <li><a href="#skills" rel="noreferrer" aria-label="Jump to Skills">Skills</a></li>
-            <li><a href="#connect" rel="noreferrer" aria-label="Jump to Connect">Connect</a></li>
+            <li><a href="#about" rel="noreferrer" aria-label="Jump to About" onclick="changer();">About</a></li>
+            <li><a href="#projects" rel="noreferrer" aria-label="Jump to Projects" onclick="changer();">Projects</a></li>
+            <li><a href="#skills" rel="noreferrer" aria-label="Jump to Skills" onclick="changer();">Skills</a></li>
+            <li><a href="#connect" rel="noreferrer" aria-label="Jump to Connect" onclick="changer();">Connect</a></li>
          </ul>
       </header>
       <div class="container">
@@ -116,7 +121,7 @@
       <div class="innercontent">
       <div class="github">
       <a href="https://github.com/ATRS7391" target="_blank" rel="noreferrer" aria-label="GitHub">
-      <svg height="28" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="28"
+      <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32"
          data-view-component="true">
       <path fill-rule="evenodd"
          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
@@ -127,7 +132,7 @@
       <div class="stack-overflow">
       <a href="https://stackoverflow.com/users/15661845/atrs" target="_blank" rel="noreferrer"
          aria-label="stackoverflow">
-      <svg aria-hidden="true" width="28" height="28" viewBox="0 0 32 37">
+      <svg aria-hidden="true" width="32" height="32" viewBox="0 0 32 37">
       <path d="M26 33v-9h4v13H0V24h4v9h22Z"></path>
       <path
          d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z">
@@ -161,7 +166,7 @@
       </div>
       <div class="pinterest">
       <a href="https://pinterest.com/ATRS7391" target="_blank" rel="noreferrer" aria-label="Pinterest">
-      <svg class="gUZ lZJ U9O kVc" height="28" width="28" viewBox="0 0 24 24" aria-hidden="true"
+      <svg class="gUZ lZJ U9O kVc" height="32" width="32" viewBox="0 0 24 24" aria-hidden="true"
          aria-label="" role="img">
       <path
          d="M0 12c0 5.123 3.211 9.497 7.73 11.218-.11-.937-.227-2.482.025-3.566.217-.932 1.401-5.938 1.401-5.938s-.357-.715-.357-1.774c0-1.66.962-2.9 2.161-2.9 1.02 0 1.512.765 1.512 1.682 0 1.025-.653 2.557-.99 3.978-.281 1.189.597 2.159 1.769 2.159 2.123 0 3.756-2.239 3.756-5.471 0-2.861-2.056-4.86-4.991-4.86-3.398 0-5.393 2.549-5.393 5.184 0 1.027.395 2.127.889 2.726a.36.36 0 0 1 .083.343c-.091.378-.293 1.189-.332 1.355-.053.218-.173.265-.4.159-1.492-.694-2.424-2.875-2.424-4.627 0-3.769 2.737-7.229 7.892-7.229 4.144 0 7.365 2.953 7.365 6.899 0 4.117-2.595 7.431-6.199 7.431-1.211 0-2.348-.63-2.738-1.373 0 0-.599 2.282-.744 2.84-.282 1.084-1.064 2.456-1.549 3.235C9.584 23.815 10.77 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12">
@@ -172,7 +177,7 @@
       <div class="one-site">
       <a href="https://atrs7391.github.io/relax-XD/" target="_blank" rel="noreferrer"
          aria-label="Just relax xD">
-      <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24" width="32">
+      <svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 0 24 24" width="36">
       <path d="M0 0h24v24H0V0z" fill="none" />
       <path
          d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z" />
