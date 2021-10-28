@@ -1,11 +1,11 @@
 @font-face {
 	font-family: Comfortaa;
-	src: url(Comfortaa.ttf)
+	src: url("./Comfortaa.ttf")
 }
 
 @font-face {
 	font-family: TESLA;
-	src: url(TESLA.ttf)
+	src: url("./TESLA.ttf")
 }
 
 body,
